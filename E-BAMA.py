@@ -67,7 +67,7 @@ def generate_advs(tflite_model, input_size):
     # Get the Enhanced Binary Adversarial Model
     model = tf.keras.models.load_model('exp_models/GTSRB/MobileNetV2_GTSRB_stop_sim')
 
-    # Specify the correct bounds and preprocessing based on the pre-trained model
+    # Specify the correct bounds and preprocessing based on the binary adversarial model
     preprocessing = dict() 
     bounds = (0, 255)
     fmodel = fb.TensorFlowModel(model, bounds=bounds, preprocessing=preprocessing)
