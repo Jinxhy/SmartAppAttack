@@ -64,12 +64,12 @@ def save_advs(model_name, attack_name, advs_list, round):
 
 
 def generate_advs(tflite_model, input_size):
-    # Get a pre-trained model: MobileNetV2, InceptionV3, ResNet50V2 or an on-device model's pre-trained model
-    model = tf.keras.applications.MobileNet(weights="imagenet")
+    # Get the Enhanced Binary Adversarial Model
+    model = tf.keras.models.load_model('exp_models/GTSRB/MobileNetV2_GTSRB_stop_sim')
 
     # Specify the correct bounds and preprocessing based on the pre-trained model
-    preprocessing = dict()  # TensorFlow MobileNetV2
-    bounds = (-1, 1)  # TensorFlow MobileNetV2
+    preprocessing = dict() 
+    bounds = (0, 255)
     fmodel = fb.TensorFlowModel(model, bounds=bounds, preprocessing=preprocessing)
 
     # Transform bounds
