@@ -67,18 +67,18 @@ For the evaluation of our attack effectiveness against different adversarial att
 
 #### Performance on different datasets:
 <p align="center">
-  <img  src="figures/dataset.png" width="50%" height="50%"><br/>
+  <img  src="figures/dataset.png" width="40%" height="40%"><br/>
   <em>Fig. 4: Attack success rate of MobileNetV2’s fine-tuned models on various datasets.</em>
 </p>
 
 #### Performance on different transfer learning approaches:
 <p align="center">
-  <img  src="figures/transfer.png" width="50%" height="50%"><br/>
+  <img  src="figures/transfer.png" width="45%" height="45%"><br/>
   <em>Fig. 5: Attack success rate of MobileNetV2’s fine-tuned models against different number of fine-tuning layers.</em>
 </p>
 
 #### Performance on different adversarial attacks:
 <p align="center">
-  <img  src="figures/algorithm.png" width="50%" height="50%"><br/>
+  <img  src="figures/algorithm.png" width="45%" height="45%"><br/>
   <em>Fig. 6: Attack success rate of MobileNetV2’s fine-tuned models under different adversarial attack algorithms.</em>
 </p>
