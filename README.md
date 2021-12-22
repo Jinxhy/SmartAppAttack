@@ -11,3 +11,7 @@ We further conduct an empirical study on real-world deep learning mobile apps co
 
 
 ## Attack workflow
+<p align="center">
+  <img  src="figures/attack_workflow.png"><br/>
+  <em>Fig. 2: The overall workflow of the attack framework.</em>
+</p>
