@@ -26,3 +26,9 @@ The framework first performs model extraction to a mobile app with a deep learni
 
 ## Evaluation
 There are four settings that may influence the effectiveness of our attack framework against on-device models including different pre-trained models, datasets, transfer learning approaches and adversarial attack algorithms. To demonstrate the attack success rate and generality, we carry out experiments in all four different settings by specifically targeting at one aspect while keeping the other three aspects the same. For example, when evaluating the performance of our attack in terms of datasets, the selected transfer learning approach, pre-trained model, and adversarial attack are fixed. Note that we adopt the variable control to avoid the explosion of setting combinations.
+
+### Pre-trained models
+In experiments, we use three different TensorFlow official pre-trained models including MobileNetV2, InceptionV3 and ResNet50V2 to build our victim fine-tuned models (i.e., on-device models). All the pre-trained models are trained on the ImageNet dataset of 1.3 million images, these models can effectively serve as generic models of the visual world and are capable of transfer learning.
+
+### Datasets
+Since most on-device models are commonly used in task domains related to the images, we follow the previous works to select three frequently-used image classification datasets to build the victim fine-tuned models for experiments. The classification tasks associated with these datasets represent typical scenarios developers may face during transfer learning.
