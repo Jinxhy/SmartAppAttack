@@ -96,22 +96,33 @@ For the evaluation of our attack effectiveness against different adversarial att
 
 
 ## Attacking real-world deep learning mobile apps (TensorFlow Lite)
-### Skin Cancer Recognition App:
+### Skin cancer recognition app:
 <p align="center">
-  <img  src="figures/skin.png" width="50%" height="50%"><br/>
+  <img  src="figures/skin.png" width="45%" height="45%"><br/>
   <em>Fig. 9: The behavior of skin cancer recognition app on normal and adversarial inputs.</em>
 </p>
 
-### Traffic Sign Recognition App:
+### Traffic sign recognition app:
 <p align="center">
-  <img  src="figures/traffic.png" width="50%" height="50%"><br/>
+  <img  src="figures/traffic.png" width="45%" height="45%"><br/>
   <em>Fig. 10: The behavior of traffic sign recognition app on normal and adversarial inputs.</em>
 </p>
 
-### Cash Recognition App:
+### Cash recognition app:
 <p align="center">
-  <img  src="figures/cash.png" width="50%" height="50%"><br/>
+  <img  src="figures/cash.png" width="45%" height="45%"><br/>
   <em>Fig. 11: The behavior of cash recognition app on normal and adversarial inputs.</em>
 </p>
 
 ## Attacking real-world deep learning mobile apps (PyTorch Mobile)
+### Obstacle recognition app:
+<p align="center">
+  <img  src="figures/obstacle.png" width="45%" height="45%"><br/>
+  <em>Fig. 12: The behavior of obstacle recognition app on normal and adversarial inputs.</em>
+</p>
+
+### Crop disease recognition app:
+<p align="center">
+  <img  src="figures/crop.png" width="45%" height="45%"><br/>
+  <em>Fig. 13: The behavior of crop disease recognition app on normal and adversarial inputs.</em>
+</p>
