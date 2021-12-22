@@ -84,3 +84,12 @@ For the evaluation of our attack effectiveness against different adversarial att
 </p>
 
 #### Performance on different combinations of the four settings:
+<p align="center">
+  <img  src="figures/four_settings.png" width="40%" height="40%"><br/>
+  <em>Fig. 7: Experiment settings for various combinations of the four settings.</em>
+</p>
+
+<p align="center">
+  <img  src="figures/four_performance.png" width="40%" height="40%"><br/>
+  <em>Fig. 8: Attack success rate for various combinations of the four settings.</em>
+</p>
