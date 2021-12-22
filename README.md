@@ -95,4 +95,6 @@ For the evaluation of our attack effectiveness against different adversarial att
 </p>
 
 
-## Attacking real-world deep learning mobile apps
+## Attacking real-world deep learning mobile apps (TensorFlow Lite)
+
+## Attacking real-world deep learning mobile apps (PyTorch Mobile)
