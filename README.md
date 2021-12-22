@@ -32,3 +32,6 @@ In experiments, we use three different TensorFlow official pre-trained models in
 
 ### Datasets
 Since most on-device models are commonly used in task domains related to the images, we follow the previous works to select three frequently-used image classification datasets to build the victim fine-tuned models for experiments. The classification tasks associated with these datasets represent typical scenarios developers may face during transfer learning.
+- CIFAR-10
+- GTSRB
+- Oxford Flowers
