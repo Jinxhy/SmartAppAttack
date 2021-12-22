@@ -11,9 +11,14 @@ We further conduct an empirical study on real-world deep learning mobile apps co
 
 
 ## Attack workflow
-The framework first performs model extraction to a mobile app with a deep learning model and check if it is a fine-tuned model. By identifying its pre-trained model and corresponding transfer learning approach, the attacker can build a binary classification model (i.e., adversarial model) against the targeted model (i.e., fine-tuned model) to craft adversarial images that fool the targeted model to misclassify a specifically targeted class. The overall workflow of our attack framework is depicted in Fig 1.
+The framework first performs model extraction to a mobile app with a deep learning model and check if it is a fine-tuned model. By identifying its pre-trained model and corresponding transfer learning approach, the attacker can build a binary classification model (i.e., adversarial model) against the targeted model (i.e., fine-tuned model) to craft adversarial images that fool the targeted model to misclassify a specifically targeted class. The overall workflow of our attack framework is depicted in Fig 1 and the details of training Grey-box Attack Model are depicted in Fig 2.
 
 <p align="center">
   <img  src="figures/attack_workflow.png"><br/>
   <em>Fig. 1: The overall workflow of the attack framework.</em>
+</p>
+
+<p align="center">
+  <img  src="figures/binary_training"><br/>
+  <em>Fig. 2: Binary adversarial model training and corresponding adversarial images crafting.</em>
 </p>
