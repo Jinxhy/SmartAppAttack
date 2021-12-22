@@ -19,6 +19,10 @@ The framework first performs model extraction to a mobile app with a deep learni
 </p>
 
 <p align="center">
-  <img  src="figures/binary_training.png"><br/>
+  <img  src="figures/binary_training.png" width="80%" height="80%"><br/>
   <em>Fig. 2: Binary adversarial model training and corresponding adversarial images crafting.</em>
 </p>
+
+
+## Evaluation
+There are four settings that may influence the effectiveness of our attack framework against on-device models including different pre-trained models, datasets, transfer learning approaches and adversarial attack algorithms. To demonstrate the attack success rate and generality, we carry out experiments in all four different settings by specifically targeting at one aspect while keeping the other three aspects the same. For example, when evaluating the performance of our attack in terms of datasets, the selected transfer learning approach, pre-trained model, and adversarial attack are fixed. Note that we adopt the variable control to avoid the explosion of setting combinations.
