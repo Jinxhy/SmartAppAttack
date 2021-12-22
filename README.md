@@ -85,7 +85,7 @@ For the evaluation of our attack effectiveness against different adversarial att
 
 #### Performance on different combinations of the four settings:
 <p align="center">
-  <img  src="figures/four_setting.png" width="40%" height="40%"><br/>
+  <img  src="figures/four_setting.png" width="60%" height="60%"><br/>
   <em>Fig. 7: Experiment settings for various combinations of the four settings.</em>
 </p>
 
