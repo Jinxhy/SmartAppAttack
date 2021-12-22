@@ -82,3 +82,5 @@ For the evaluation of our attack effectiveness against different adversarial att
   <img  src="figures/algorithm.png" width="40%" height="40%"><br/>
   <em>Fig. 6: Attack success rate of MobileNetV2’s fine-tuned models under different adversarial attack algorithms.</em>
 </p>
+
+#### Performance on different combinations of the four settings:
