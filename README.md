@@ -67,7 +67,7 @@ For the evaluation of our attack effectiveness against different adversarial att
 
 #### Performance on different datasets:
 <p align="center">
-  <img  src="figures/dataset.png" width="60%" height="60%"><br/>
+  <img  src="figures/dataset.png" width="50%" height="50%"><br/>
   <em>Fig. 4: Attack success rate of MobileNetV2’s fine-tuned models on various datasets.</em>
 </p>
 
