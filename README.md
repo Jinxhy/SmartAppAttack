@@ -27,14 +27,35 @@ The framework first performs model extraction to a mobile app with a deep learni
 ## Evaluation
 There are four settings that may influence the effectiveness of our attack framework against on-device models including different pre-trained models, datasets, transfer learning approaches and adversarial attack algorithms. To demonstrate the attack success rate and generality, we carry out experiments in all four different settings by specifically targeting at one aspect while keeping the other three aspects the same. For example, when evaluating the performance of our attack in terms of datasets, the selected transfer learning approach, pre-trained model, and adversarial attack are fixed. Note that we adopt the variable control to avoid the explosion of setting combinations.
 
-### Pre-trained models
-In experiments, we use three different TensorFlow official pre-trained models including MobileNetV2, InceptionV3 and ResNet50V2 to build our victim fine-tuned models (i.e., on-device models). All the pre-trained models are trained on the ImageNet dataset of 1.3 million images, these models can effectively serve as generic models of the visual world and are capable of transfer learning.
+### Experimental setup
 
-### Datasets
-Since most on-device models are commonly used in task domains related to the images, we follow the previous works to select three frequently-used image classification datasets to build the victim fine-tuned models for experiments. The classification tasks associated with these datasets represent typical scenarios developers may face during transfer learning. The datasets are as follows:
+#### Pre-trained models
+In experiments, we use three different TensorFlow official pre-trained models including MobileNetV2, InceptionV3 and ResNet50V2 to build our victim fine-tuned models (i.e., on-device models). All the pre-trained models are trained on the ImageNet dataset of 1.3 million images, these models can effectively serve as generic models of the visual world and are capable of transfer learning.
+- MobileNetV2
+- InceptionV3
+- ResNet50V2
+
+#### Datasets
+Since most on-device models are commonly used in task domains related to the images, we follow the previous works to select three frequently-used image classification datasets to build the victim fine-tuned models for experiments. The classification tasks associated with these datasets represent typical scenarios developers may face during transfer learning.
 - CIFAR-10
 - GTSRB
 - Oxford Flowers
 
-### Transfer learning approaches
+#### Transfer learning approaches
 To evaluate the effectiveness of our attack on two transfer learning approaches (_Feature Extraction_ and _Fine-Tuning_), we unfreeze a different number of the top layers (except for the classifier) of a pre-trained model (e.g., MobileNetV2) and jointly train both the newly-added classifier as well as the last unfreezing layers of the base model to build our victim fine-tuned models. These resulting models are able to cover most tuning strategies.
+- _Feature Extraction_
+- _Fine-Tuning_
+
+#### Adversarial attack algorithms
+For the evaluation of our attack effectiveness against different adversarial attacks, we focus on untargeted attacks in the white-box setting as our attack fools fine-tuned models to misclassify targeted images by constructing adversarial examples on known binary adversarial models. Considering a wide range of white-box untargeted attack algorithms have been proposed, it is unfeasible to cover all of them. We thus select three representative attacks including Fast Gradient Sign Method (FGSM), Carlini and Wagner (C&W), and Clipping-Aware Noise (CAN) attacks for experiments as they are either the basis of many powerful attacks or effective in computer vision tasks.
+- FGSM
+- C&W
+- CAN
+
+#### Baselines
+- Default Binary Adversarial Model Attack (BAMA), which crafts adversarial images based on a binary model trained on the targeted class (i.e., the class the attacker intends to force the victim model to misclassify) and non-targeted class (i.e., an arbitrary class recognized by the victim model except for the targeted one).
+- Enhanced Binary Adversarial Model Attack (E-BAMA), it is similar to the first setting but substitutes the non-targeted class with the most error-prone class (i.e., the class most likely to be misclassified as the targeted one) during binary model training.
+- Pre-trained Model Attack (PMA), which directly generates adversarial images solely based on the victim model's pre-trained model without taking any other model information into account, i.e., it ignores the structure and parameter information of a victim model.
+
+
+### Effectiveness of the attack
