@@ -61,7 +61,7 @@ For the evaluation of our attack effectiveness against different adversarial att
 ### Effectiveness of the attack
 #### Performance on different pre-trained models:
 <p align="center">
-  <img  src="figures/pre-trained.png" width="50%" height="50%"><br/>
+  <img  src="figures/pre-trained.png" width="45%" height="45%"><br/>
   <em>Fig. 3: Attack success rate on Flower Recognition against different pre-trained models.</em>
 </p>
 
