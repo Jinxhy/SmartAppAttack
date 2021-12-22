@@ -19,6 +19,6 @@ The framework first performs model extraction to a mobile app with a deep learni
 </p>
 
 <p align="center">
-  <img  src="figures/binary_training"><br/>
+  <img  src="figures/binary_training.png"><br/>
   <em>Fig. 2: Binary adversarial model training and corresponding adversarial images crafting.</em>
 </p>
