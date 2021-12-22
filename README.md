@@ -59,3 +59,26 @@ For the evaluation of our attack effectiveness against different adversarial att
 
 
 ### Effectiveness of the attack
+#### Performance on different pre-trained models:
+<p align="center">
+  <img  src="figures/pre-trained.png" width="55%" height="55%"><br/>
+  <em>Fig. 3: Attack success rate on Flower Recognition against different pre-trained models.</em>
+</p>
+
+#### Performance on different datasets:
+<p align="center">
+  <img  src="figures/dataset.png" width="60%" height="60%"><br/>
+  <em>Fig. 4: Attack success rate of MobileNetV2’s fine-tuned models on various datasets.</em>
+</p>
+
+#### Performance on different transfer learning approaches:
+<p align="center">
+  <img  src="figures/transfer.png" width="55%" height="55%"><br/>
+  <em>Fig. 5: Attack success rate of MobileNetV2’s fine-tuned models against different number of fine-tuning layers.</em>
+</p>
+
+#### Performance on different adversarial attacks:
+<p align="center">
+  <img  src="figures/algorithm.png" width="55%" height="55%"><br/>
+  <em>Fig. 6: Attack success rate of MobileNetV2’s fine-tuned models under different adversarial attack algorithms.</em>
+</p>
