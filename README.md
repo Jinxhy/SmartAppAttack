@@ -1,4 +1,9 @@
 # Smart App Attack: Hacking Deep Learning Models in Android Apps
+## *Accepted to ICSE-2021-SEIP*
+## RESOURCE
+- Paper: [arXiv](https://arxiv.org/abs/2204.11075)
+
+
 On-device deep learning is rapidly gaining popularity in mobile applications. Compared to offloading deep learning from smartphones to the cloud, on-device deep learning enables offline model inference while preserving user privacy.
 
 However, such mechanisms inevitably store models on users' smartphones and may invite adversarial attacks as they are accessible to attackers. __Due to the characteristic of the on-device model, most existing adversarial attacks cannot be directly applied for on-device models__.
