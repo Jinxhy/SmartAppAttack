@@ -1,5 +1,5 @@
 # Smart App Attack: Hacking Deep Learning Models in Android Apps
-## *Accepted to TIFS 2022*
+## *Accepted to TIFS-2022*
 ## Resource
 - Paper: [arXiv](https://arxiv.org/abs/2204.11075)
 
